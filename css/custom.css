@@ -194,9 +194,13 @@ input.src{
     padding: 9px 10px 9px 32px;
     outline: none;
     font-size: 18px;
-    border-radius: 15px;
+    border-radius: 8px;
     color: #444;
     border: 3px ;
     background: #fff url('https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png')
         no-repeat 9px center;
+}
+.buscadores{
+    display: flex;
+    justify-content: space-between;
 }
