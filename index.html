@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Propinas y Consumos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <header class="d-flex py-4 bg-primary">
+        <h2 class=" text-white fs-3">BSales</h2>
+        <div class="two columns u-pull-right">
+            <ul>
+                <li class="submenu">
+                    <img src="img/cart.png" id="img-carrito">
+                    <div id="carrito">
+                        
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="d-flex mt-4 justify-content-center">
+        <input id="searchCategory" type="text" name="search" placeholder="Buscar Categoria" class="src">
+        <div class="dropdown">
+        </div>
+        <!-- <button  data-bs-toggle="modal" data-bs-target="#formulario" type="button" class="btn btn-success">Nueva Orden</button> -->
+    </div>
+    
+    
+    <main id="productos" class="container bg-light mt-5 p-4">
+        <h2  class="text-center my-4">Productos</h2>
+        <select   id="category" >
+            <option value="0">Seleccione una Categoria</option>
+        </select>
+        <div class="contenido">
+            <div class="row">
+                
+            </div>
+        </div>
+    </main>
+
+    
+    <section id="resumen" class="resumen bg-light container mt-5 p-4 d-none">
+        <h2 class="text-center my-4">Resumen De Consumo </h2>
+
+        <div class="contenido row">
+            <p class="text-center">Añade los elementos del pedido</p>
+        </div>
+    </section>
+
+    <!-- Modal -->
+        <div class="modal fade" id="formulario">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"">Restaurant App</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Mesa</label>
+                                <input id="mesa" type="number" class="form-control" min="1" max="8">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Hora</label>
+                                <input id="hora" type="time" class="form-control" >
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="guardar-cliente" type="button" class="btn btn-primary">Crear Orden</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
