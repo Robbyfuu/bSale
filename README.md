@@ -3,9 +3,9 @@
   
   ##Indice
   *[Indice](#Indice)
-  *[Descripción del Proyecto](#Descripción del Proyecto)
-  *[Funcionalidades del Proyecto](#Funcionalidades del Proyecto)
-  *[Tecnologías Utilizadas] (#Tecnologías Utilizadas)
+  *[Descripción del Proyecto](#Descripción-del-Proyecto)
+  *[Funcionalidades del Proyecto](#Funcionalidades-del-Proyecto)
+  *[Tecnologías Utilizadas] (#Tecnologías-Utilizadas)
   
 En esta pagina se podran visualizar los productos que estan alojados en la base de datos de BSale text.
 Las 2 principales funcionalidades de esta pagina web son:
