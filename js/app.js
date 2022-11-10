@@ -33,7 +33,7 @@ function cargarEventListener() {
 }
 //funciones
 const obtenerProductos = () => {
-  const url = `http://localhost:8000/api/product/`;
+  const url = `https://backend-bsale-roberto.herokuapp.com/api/product/`;
 
   fetch(url)
     .then((respuesta) => respuesta.json())
@@ -42,30 +42,11 @@ const obtenerProductos = () => {
     })
     .catch((error) => console.log(error));
 };
-const obtenerProductosID = async (id) => {
-  const url = `http://localhost:8000/api/product/${id}`;
 
-  await fetch(url)
-    .then((respuesta) => respuesta.json())
-    .then((resultado) => mostrarProductos(resultado))
-    .catch((error) => console.log(error));
-};
-const obtenerProductosPorCategoria = () => {
-  const id = document.querySelector("#searchCategory").value;
-  console.log(id);
-  const url = `http://localhost:8000/api/product/category/${
-    id != "" ? id : datosBusqueda.idCategoria
-  }`;
-
-  fetch(url)
-    .then((respuesta) => respuesta.json())
-    .then((resultado) => mostrarProductos(resultado))
-    .catch((error) => console.log(error));
-};
 const obtenerCategoria = () => {
   const id = document.querySelector("#searchCategory").value;
 
-  const url = `http://localhost:8000/api/category/`;
+  const url = `https://backend-bsale-roberto.herokuapp.com/api/category/`;
 
   fetch(url)
     .then((respuesta) => respuesta.json())
