@@ -8,6 +8,7 @@
    </p>
 
 PD: La documentacion  son los readme de los 2 repositorios de GITHUB
+<a href="https://github.com/Robbyfuu/backend-BSale">REST API</a>
 
 ## Indice
 * [Descripción del Proyecto](#Descripción-del-Proyecto)
