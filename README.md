@@ -7,7 +7,7 @@
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    </p>
 
-
+PD: La documentacion  son los readme de los 2 repositorios de GITHUB
 
 ## Indice
 * [Descripción del Proyecto](#Descripción-del-Proyecto)
